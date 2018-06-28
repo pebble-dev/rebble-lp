@@ -1,0 +1,14 @@
+{
+    "production": {
+        "app_function": "languages.app",
+        "aws_region": "us-west-2",
+        "profile_name": "rebble",
+        "project_name": "rebble-lp",
+        "runtime": "python3.6",
+        "s3_bucket": "rebble-zappa",
+        "domain": "lp.rebble.io",
+        "route53_enabled": false,
+        "memory_size": 128,
+        "certificate_arn": "arn:aws:acm:us-east-1:032833028620:certificate/44a48816-f11c-4092-9a90-1e61a099b284"
+    }
+}
