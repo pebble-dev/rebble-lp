@@ -1,3 +1,9 @@
+try:
+  import googleclouddebugger
+  googleclouddebugger.enable()
+except ImportError:
+  pass
+
 import json
 from os import environ
 
