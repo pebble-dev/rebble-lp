@@ -41,7 +41,7 @@ def list_languages():
         version_packs = []
         for pack in packs:
             pack_major, pack_minor = [int(x) for x in pack['firmware'].split('.')[:2]]
-            if major == pack_major and pack_minor >= minor:
+            if major == pack_major and minor >= pack_minor:
                 version_packs.append(pack)
         packs = version_packs
     return jsonify(languages=[urlify(x) for x in packs])
