@@ -1,6 +1,6 @@
 try:
   import googleclouddebugger
-  googleclouddebugger.enable()
+  googleclouddebugger.enable(module='lp')
 except ImportError:
   pass
 
