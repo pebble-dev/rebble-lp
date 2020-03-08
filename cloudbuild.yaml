@@ -2,8 +2,8 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - build
-  - "--tag=gcr.io/pebble-rebirth/lp"
+  - "--tag=gcr.io/pebble-rebirth/lp:$TAG_NAME"
   - "--file=./Dockerfile.cloudrun"
   - .
 images:
-- "gcr.io/pebble-rebirth/lp"
+- "gcr.io/pebble-rebirth/lp:$TAG_NAME"
