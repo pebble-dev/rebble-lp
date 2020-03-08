@@ -40,7 +40,7 @@ def list_languages():
         major, minor = [int(x) for x in fw.split('.')[:2]]
         version_packs = []
         for pack in packs:
-            pack_major, pack_minor = [int(x) for x in pack['firmware'].split('.')]
+            pack_major, pack_minor = [int(x) for x in pack['firmware'].split('.')[:2]]
             if major == pack_major and pack_minor >= minor:
                 version_packs.append(pack)
         packs = version_packs
