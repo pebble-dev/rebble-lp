@@ -37,7 +37,7 @@ def list_languages():
         packs = [x for x in packs if x['hardware'] == request.args['hw']]
     fw = request.args.get('firmware')
     if fw:
-        major, minor = [int(x) for x in fw.split('.')]
+        major, minor = [int(x) for x in fw.split('.')[:2]]
         version_packs = []
         for pack in packs:
             pack_major, pack_minor = [int(x) for x in pack['firmware'].split('.')]
