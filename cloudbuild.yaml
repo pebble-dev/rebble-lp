@@ -4,7 +4,7 @@ steps:
   - sh
   - -c
   - |
-    echo '{"git": {"revisionId": "$REVISION_ID", "url": "$_HEAD_REPO_URL"}}' > source-context.json
+    echo '{"git": {"revisionId": "$REVISION_ID", "url": "git@github.com:pebble-dev/rebble-lp.git"}}' > source-context.json
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - build
