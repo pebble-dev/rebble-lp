@@ -12,6 +12,11 @@ def urlify(pack):
     return {**pack, 'file': f"https://binaries.rebble.io/lp/{pack['file']}"}
 
 
+@app.route('/heartbeat')
+def heartbeat():
+    return 'ok'
+
+
 @app.route('/v1/languages')
 def list_languages():
     packs = languages[:]
