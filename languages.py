@@ -1,8 +1,15 @@
 import json
+from os import environ
 
+import beeline
+from beeline.middleware.flask import HoneyMiddleware
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+if environ.get('HONEYCOMB_KEY'):
+     beeline.init(writekey=environ['HONEYCOMB_KEY'], dataset='rws', service_name='lp')
+     HoneyMiddleware(app, db_events=True)
 
 with open('language_packs.json') as f:
     languages = json.load(f)['languages']
