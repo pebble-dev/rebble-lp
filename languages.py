@@ -30,6 +30,7 @@ def urlify(pack):
 
 
 @app.route('/heartbeat')
+@app.route('/lp/heartbeat')
 def heartbeat():
     return 'ok'
 
