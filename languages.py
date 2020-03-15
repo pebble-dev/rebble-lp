@@ -1,8 +1,12 @@
 try:
-  import googleclouddebugger
-  googleclouddebugger.enable(module='lp')
+    import google.auth.exceptions
+    try:
+        import googleclouddebugger
+        googleclouddebugger.enable(module='notif-app-icons')
+    except (ImportError, google.auth.exceptions.DefaultCredentialsError):
+        print("Couldn't start cloud debugger")
 except ImportError:
-  pass
+    print("Couldn't import google exceptions")
 
 import json
 from os import environ
