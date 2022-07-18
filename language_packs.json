@@ -1679,6 +1679,76 @@
       "hardware": "silk_evt",
       "firmware": "4.0.0",
       "id": "57c4b97d852fe4001b3b5b24"
+    },
+    {
+      "mobile": {
+        "version": "2.6.0",
+        "name": "ios"
+      },
+      "version": 1,
+      "localName": "English + မြန်မာစာ (contrib by LCP)",
+      "name": "English+Burmese(contrib)",
+      "file": "myanmar.pbl",
+      "ISOLocal": "en_MY",
+      "hardware": "silk_evt",
+      "firmware": "4.0.0",
+      "id": "57c4b97d852ff00000000000"
+    },
+    {
+      "mobile": {
+        "version": "2.6.0",
+        "name": "ios"
+      },
+      "version": 1,
+      "localName": "English + မြန်မာစာ (contrib by LCP)",
+      "name": "English+Burmese(contrib)",
+      "file": "myanmar.pbl",
+      "ISOLocal": "en_MY",
+      "hardware": "silk",
+      "firmware": "4.0.0",
+      "id": "57c4b97d852ff00000000001"
+    },
+    {
+      "mobile": {
+        "version": "2.6.0",
+        "name": "ios"
+      },
+      "version": 1,
+      "localName": "English + မြန်မာစာ (contrib by LCP)",
+      "name": "English+Burmese(contrib)",
+      "file": "myanmar.pbl",
+      "ISOLocal": "en_MY",
+      "hardware": "spalding",
+      "firmware": "4.0.0",
+      "id": "57c4b97d852ff00000000002"
+    },
+    {
+      "mobile": {
+        "version": "2.6.0",
+        "name": "ios"
+      },
+      "version": 1,
+      "localName": "English + မြန်မာစာ (contrib by LCP)",
+      "name": "English+Burmese(contrib)",
+      "file": "myanmar.pbl",
+      "ISOLocal": "en_MY",
+      "hardware": "snowy_dvt",
+      "firmware": "4.0.0",
+      "id": "57c4b97d852ff00000000003"
+    },
+    {
+      "mobile": {
+        "version": "2.6.0",
+        "name": "ios"
+      },
+      "version": 1,
+      "localName": "English + မြန်မာစာ (contrib by LCP)",
+      "name": "English+Burmese(contrib)",
+      "file": "myanmar.pbl",
+      "ISOLocal": "en_MY",
+      "hardware": "snowy_s3",
+      "firmware": "4.0.0",
+      "id": "57c4b97d852ff00000000004"
     }
   ]
 }
