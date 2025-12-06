@@ -3,5 +3,14 @@ Flask==1.0.2
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.1.1
-Werkzeug==0.14.1
-honeycomb-beeline==2.11.4
+Werkzeug==0.16.1
+honeycomb-beeline==2.12.1
+langcodes==3.3.0
+language-data==1.1
+boto3==1.9.169
+Flask-SQLAlchemy==2.3.2
+Flask-Migrate==2.1.1
+psycopg2==2.7.6.1
+requests==2.21.0
+SQLAlchemy==1.3.0
+./rws-common
