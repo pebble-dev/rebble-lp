@@ -1,3 +1,3 @@
 [submodule "rws-common"]
 	path = rws-common
-	url = https://github.com/pebble-dev/rws-common.git
+	url = ../rws-common
