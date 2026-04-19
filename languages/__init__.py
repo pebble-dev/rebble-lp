@@ -1,12 +1,12 @@
-try:
-    import google.auth.exceptions
-    try:
-        import googleclouddebugger
-        googleclouddebugger.enable(module='languages')
-    except (ImportError, google.auth.exceptions.DefaultCredentialsError):
-        print("Couldn't start cloud debugger")
-except ImportError:
-    print("Couldn't import google exceptions")
+#try:
+#    import google.auth.exceptions
+#    try:
+#        import googleclouddebugger
+#        googleclouddebugger.enable(module='languages')
+#    except (ImportError, google.auth.exceptions.DefaultCredentialsError):
+#        print("Couldn't start cloud debugger")
+#except ImportError:
+#    print("Couldn't import google exceptions")
 
 from flask import Flask, jsonify
 from werkzeug.middleware.proxy_fix import ProxyFix
