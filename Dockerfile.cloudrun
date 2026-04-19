@@ -1,4 +1,6 @@
-FROM python:3.6
+FROM python:3.6-alpine
+RUN apk add --update build-base libffi-dev zlib-dev
+RUN apk add --update postgresql-dev
 RUN pip install gunicorn google-python-cloud-debugger
 ADD . /code
 WORKDIR /code
