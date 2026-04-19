@@ -19,9 +19,10 @@ def get_languages():
     hardware = request.args.get('hw')
     if hardware:
         packs = packs.filter_by(hardware=hardware)
-    locale = request.args.get('isoLocal')
-    if locale:
-        packs = packs.filter_by(language_id=locale)
+    # TODO: Don't filter by it, use this value for translating local names
+    #locale = request.args.get('isoLocal')
+    #if locale:
+    #    packs = packs.filter_by(language_id=locale)
     firmware = request.args.get('firmware')
     if firmware:
         try:
