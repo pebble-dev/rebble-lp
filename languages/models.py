@@ -67,7 +67,6 @@ class LanguagePack(db.Model):
             return None
 
     def to_json(self):
-        # TODO: Figure out if the mobile section is necessary
         return {
             'id': self.id,
             'version': self.version,
@@ -77,6 +76,10 @@ class LanguagePack(db.Model):
             'localName': self.language.local_name,
             'ISOLocal': self.language.locale,
             'file': os.path.join(config['BINARIES_ROOT'], self.file),
+            'mobile': {
+                'version': '2.6.0',
+                'name': 'ios'
+            },
         }
 
 db.Index('language_pack_firmware_hardware_languageid', LanguagePack.firmware_major, LanguagePack.firmware_minor, LanguagePack.firmware_patch, LanguagePack.hardware, LanguagePack.language_id, unique = True)
